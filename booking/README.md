@@ -1,34 +1,32 @@
-Revel Hotel Booking
-===============================
+Revel Hotels -  International Bookings
+=========================================
 
-This sample app demonstrates --
+This sample application demonstrates :-
 
 * Using an SQL (SQLite) database and configuring the Revel DB module.
-* Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library
-* [Interceptors](../manual/interceptors.html) for checking that an user is logged in.
-* Using [validation](../manual/validation) and displaying inline errors
+* Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library.
+* [Interceptors](http://revel.github.io/manual/interceptors.html) for checking that an user is logged in.
+* Using [validation](http://revel.github.io/manual/validation) and displaying inline errors.
 
 
-Here a quick summary of the important files and their purpose:
+Here is a quick summary of the important files and their purpose:
 
 * `booking/app/`
-	* `models`		// Structs and validation
-		* [`booking.go`](./app/models/booking.go)
-		* [`hotel.go`](/app/models/hotel.go)
+	* `models`		- Structs and validation
+		* [`booking.go`](/booking//app/models/booking.go)
+		* [`hotel.go`](/booking//app/models/hotel.go)
 		* [`user.go`](/booking/app/models/user.go)
 	* `controllers`
-	
-	
-init.go    # Register all of the interceptors.
-gorp.go    # A plugin for setting up Gorp, creating tables, and managing transactions.
-app.go     # "Login" and "Register new user" pages
-hotels.go  # Hotel searching and booking
-
-views
+        * [`init.go`](/booking/controllers/init.go)    - Register all of the interceptors.
+        * [`gorp.go`](/booking/controllers/gorp.go)    - A plugin for setting up Gorp, creating tables, and managing transactions.
+        * [`app.go`](/booking/controllers/app.go)     - "Login" and "Register new user" pages
+        * [`hotels.go`](/booking/controllers/hotels.go)  - Hotel searching and booking
+    * `views`
+        * .. templates..
 
 
 # Database Install and Setup
-This example used [sqlite](https://www.sqlite.org/), but u can easily adopt code to your needs with mysql, postgres, et all.
+This example used [sqlite](https://www.sqlite.org/), but code can be easily changed for mysql, postgres, et all.
 
 ## sqlite Installation
 
