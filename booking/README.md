@@ -14,8 +14,8 @@ Here a quick summary of the important files and their purpose:
 * `booking/app/`
 	* `models`		// Structs and validation
 		* [`booking.go`](./app/models/booking.go)
-		* [`hotel.go`](./foo.com)
-		* `user.go`
+		* [`hotel.go`](/app/models/hotel.go)
+		* [`user.go`](/booking/app/models/user.go)
 	* `controllers`
 	
 	
