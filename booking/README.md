@@ -2,8 +2,8 @@ Revel Hotels -  International Bookingz..zzz
 ===========================================
 
 This sample application demonstrates that running a hotel is complicated.. 
-and some reference material of what happenes every day at A `Revel Hotel` for fun, please smile :-)
-- [Revel Swizz Hotel](https://www.youtube.com/watch?v=SXn2QVipK2o
+and some reference material of what happenez every day at a `Revel Hotel` :-)
+- [Revel Swizz Hotel](https://www.youtube.com/watch?v=SXn2QVipK2o)
 - [Cleaning le room](https://www.youtube.com/watch?v=iO_eXXgOsFI)
 - [Checkin At Revel ParisAfro](https://www.youtube.com/watch?v=70TfU9R09Qg)
 

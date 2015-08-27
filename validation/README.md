@@ -1,4 +1,4 @@
-Revel Validation 
+Revel Validation Example
 ===============================
 
 The validation app demonstrates every way that the Validation system may be used

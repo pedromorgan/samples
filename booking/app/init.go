@@ -26,5 +26,8 @@ var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {
 	c.Response.Out.Header().Add("X-XSS-Protection", "1; mode=block")
 	c.Response.Out.Header().Add("X-Content-Type-Options", "nosniff")
 
+	// add our hotel filter
+	c.Response.Out.Header().Add("X-Revel-Hotel-For-Fun", "78910")
+
 	fc[0](c, fc[1:]) // Execute the next filter stage.
 }
