@@ -1,6 +1,8 @@
 package models
 
-import "github.com/mrjones/oauth"
+import (
+	"github.com/mrjones/oauth"
+)
 
 type User struct {
 	Username     string
