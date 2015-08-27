@@ -11,22 +11,21 @@ This sample app demonstrates --
 
 Here a quick summary of the important files and their purpose:
 
-``` bash
-	booking/app/
-		models		// Structs and validation.
-			booking.go
-			hotel.go
-			user.go
+`booking/app/`
+	`models`		// Structs and validation
+		[`booking.go`](./app/models/booking.go]
+		[`hotel.go`](./foo.com)
+		`user.go`
+	`controllers`
 	
-		controllers
-			init.go    # Register all of the interceptors.
-			gorp.go    # A plugin for setting up Gorp, creating tables, and managing transactions.
-			app.go     # "Login" and "Register new user" pages
-			hotels.go  # Hotel searching and booking
 	
-		views
-			...
-```
+init.go    # Register all of the interceptors.
+gorp.go    # A plugin for setting up Gorp, creating tables, and managing transactions.
+app.go     # "Login" and "Register new user" pages
+hotels.go  # Hotel searching and booking
+
+views
+
 
 # Database Install and Setup
 This example used [sqlite](https://www.sqlite.org/), but u can easily adopt code to your needs with mysql, postgres, et all.

@@ -1,3 +1,9 @@
 routes/
 tmp/
 test-results/
+
+.idea/
+*.iml
+
+# pedro's quirk
+fabfile.py
