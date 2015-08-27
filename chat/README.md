@@ -1,30 +1,32 @@
-Chat App Demo
+Chit Chat Revel App 
 =========================
-The `Chat` app demonstrates ([browse the source](https://github.com/revel/samples/tree/master/chat)):
 
-* Using channels to implement a chat room with a [publish-subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) model.
-* Using both `Comet` and [Websockets](../manual/websockets.html)
+The [`Chat`](/chat/) app demonstrates :
 
-Here are the key contents of the app:
+* Using channels for a chat room with the [publish-subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) model
+	* With  [Websockets](http://revel.github.io/manual/websockets)
+	* And kinda legacy `Comet`  
+
+The main files and purpose are:
+
+* `chat/app/`
+	* `chatroom/` - Chat room routines
+		* [`chatroom.go`](/chat/app/chatroom/chatroom.go)
+	* `controllers/`
+		* [`app.go`](/chat/app/chatroom/controllers/app.go) - The welcome screen, allowing user to pick a technology
+		* [`refresh.go`](/chat/app/chatroom/controllers/refresh.go)      - Handlers for the "Active Refresh" chat demo
+		* [`longpolling.go](/chat/app/chatroom/controllers/longpolling.go) ` - Handlers for the "Long polling" ("Comet") chat demo
+		* [`websocket.go`](/chat/app/chatroom/controllers/websocket.go)    - Handlers for the "Websocket" chat demo
+	* views
+		* templates with HTML and Javascript
+
 ```
-	chat/app/
-		chatroom	       # Chat room routines
-			chatroom.go
-
-		controllers
-			app.go         # The welcome screen, allowing user to pick a technology
-			refresh.go     # Handlers for the "Active Refresh" chat demo
-			longpolling.go # Handlers for the "Long polling" ("Comet") chat demo
-			websocket.go   # Handlers for the "Websocket" chat demo
-
-		views
-			                # HTML and Javascript
-
-```
-# Chat Room Background
+Chat Room Hackers Guide
+================================================
 
 First, let's look at how the chat room is implemented, in
-[`app/chatroom/chatroom.go`](https://github.com/revel/samples/blob/master/chat/app/chatroom/chatroom.go).
+
+[`chatroom.go`](/chat/app/chatroom/chatroom.go).
 
 The chat room runs as an independent `go-routine`, started on initialization:
 

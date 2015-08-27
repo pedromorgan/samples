@@ -1,5 +1,5 @@
-Revel Hotels -  International Bookings
-=========================================
+Revel Hotels -  International Bookingz..zzz
+===========================================
 
 This sample application demonstrates :-
 
