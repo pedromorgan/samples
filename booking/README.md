@@ -1,14 +1,14 @@
 Revel Hotels -  International Bookingz..zzz
 ===========================================
 
-Running a hotel is complicated.. and some reference material for fun, please smile :-)
-- [Revel Swizz Hotel]https://www.youtube.com/watch?v=SXn2QVipK2o
+This sample application demonstrates that running a hotel is complicated.. 
+and some reference material of what happenes every day at A `Revel Hotel` for fun, please smile :-)
+- [Revel Swizz Hotel](https://www.youtube.com/watch?v=SXn2QVipK2o
 - [Cleaning le room](https://www.youtube.com/watch?v=iO_eXXgOsFI)
 - [Checkin At Revel ParisAfro](https://www.youtube.com/watch?v=70TfU9R09Qg)
 
+We only write code once, life is fun so lets go..>>.
 
-
-This sample application demonstrates :-
 
 * Using a database - SQLite or others 
 * Configuring the Revel DB module
