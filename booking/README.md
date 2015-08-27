@@ -11,12 +11,12 @@ This sample app demonstrates --
 
 Here a quick summary of the important files and their purpose:
 
-`booking/app/`
-	`models`		// Structs and validation
-		[`booking.go`](./app/models/booking.go]
-		[`hotel.go`](./foo.com)
-		`user.go`
-	`controllers`
+* `booking/app/`
+	* `models`		// Structs and validation
+		* [`booking.go`](./app/models/booking.go]
+		* [`hotel.go`](./foo.com)
+		* `user.go`
+	* `controllers`
 	
 	
 init.go    # Register all of the interceptors.
