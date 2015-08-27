@@ -3,53 +3,55 @@ Revel Hotels -  International Bookings
 
 This sample application demonstrates :-
 
-* Using an SQL (SQLite) database and configuring the Revel DB module.
-* Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library.
-* [Interceptors](http://revel.github.io/manual/interceptors.html) for checking that an user is logged in.
-* Using [validation](http://revel.github.io/manual/validation) and displaying inline errors.
+* Using a database - SQLite or others 
+* Configuring the Revel DB module
+* Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library
+* Using [Interceptors](http://revel.github.io/manual/interceptors) for checking that an user is logged in
+* Using [validation](http://revel.github.io/manual/validation) and displaying inline errors
 
 
 Here is a quick summary of the important files and their purpose:
 
 * `booking/app/`
-	* `models`		- Structs and validation
+	* `models/`		- Structs and validation
 		* [`booking.go`](/booking//app/models/booking.go)
 		* [`hotel.go`](/booking//app/models/hotel.go)
 		* [`user.go`](/booking/app/models/user.go)
-	* `controllers`
+	* `controllers/`
         * [`init.go`](/booking/controllers/init.go)    - Register all of the interceptors.
         * [`gorp.go`](/booking/controllers/gorp.go)    - A plugin for setting up Gorp, creating tables, and managing transactions.
         * [`app.go`](/booking/controllers/app.go)     - "Login" and "Register new user" pages
         * [`hotels.go`](/booking/controllers/hotels.go)  - Hotel searching and booking
-    * `views`
-        * .. templates..
+    * `views/`
+        * .. the templates..
 
 
 # Database Install and Setup
-This example used [sqlite](https://www.sqlite.org/), but code can be easily changed for mysql, postgres, et all.
+This example uses [sqlite](https://www.sqlite.org/), but code can be easily changed for mysql, postgres, et all.
 
 ## sqlite Installation
 
-- The booking app uses [go-sqlite3](https://github.com/mattn/go-sqlite3) database driver, **which wraps the native C library**.
+- The booking app uses the [go-sqlite3](https://github.com/mattn/go-sqlite3) database driver, **which wraps the native C library**.
 - This means that the native c code needs to be installed first
 
-### Install sqlite on OSX:
+#### Install sqlite on OSX
 
 1. Install [Homebrew](http://mxcl.github.com/homebrew/) if you don't already have it.
 2. Install pkg-config and sqlite3:
 
-~~~
-$ brew install pkgconfig sqlite3
-~~~
+```bash
+brew install pkgconfig sqlite3
+```
 
-### Install sqlite on Ubuntu:
-```sh
+#### Install sqlite on Ubuntu
+
+```bash
 $ sudo apt-get install sqlite3 libsqlite3-dev
 ```
 
-Once SQLite is installed, it will be possible to run the booking app:
-```sh
-	$ revel run github.com/revel/samples/booking
+# Run the Hotel App
+```bash
+revel run github.com/revel/samples/booking
 ```
 
 ## Database / Gorp Plugin
