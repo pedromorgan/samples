@@ -1,7 +1,7 @@
-Hotel Booking Example
+Revel Hotel Booking
 ===============================
 
-The Hotel Booking sample app demonstrates ([browse the source](https://github.com/revel/samples/tree/master/booking)):
+This sample app demonstrates --
 
 * Using an SQL (SQLite) database and configuring the Revel DB module.
 * Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library
@@ -9,20 +9,21 @@ The Hotel Booking sample app demonstrates ([browse the source](https://github.co
 * Using [validation](../manual/validation) and displaying inline errors
 
 
-Here's a quick summary of the files and purpose
-```
+Here a quick summary of the important files and their purpose:
+
+``` bash
 	booking/app/
-		models		   # Structs and validation.
+		models		// Structs and validation.
 			booking.go
 			hotel.go
 			user.go
-
+	
 		controllers
 			init.go    # Register all of the interceptors.
 			gorp.go    # A plugin for setting up Gorp, creating tables, and managing transactions.
 			app.go     # "Login" and "Register new user" pages
 			hotels.go  # Hotel searching and booking
-
+	
 		views
 			...
 ```
