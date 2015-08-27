@@ -1,21 +1,20 @@
-Twitter OAuth with Revel example
+Twitter OAuth with Revel 
 ==================================
 
-The `twitter-oauth` app uses the `mrjones/oauth` library to demonstrate:
+This `twitter-oauth` sample application uses 
+the [`mrjones/oauth`](https://github.com/mrjones/oauth) library to demonstrate:
 
-* How to do the `oauth` dance to authenticate your app to use a `Twitter` account.
-* Fetching mentions for that Twitter account.
-* Tweeting on behalf of that Twitter account.
+* How to do the `oauth` dance to authenticate an app to a `Twitter` account.
+* Fetching mentions for that Twitter account
+* Tweeting on behalf of that Twitter account
 
-The core contents of the app:
-```sh
-	twitter-oauth/app/
-		models
-			user.go   # User struct and in-memory data store
-		controllers
-			app.go    # All code
-```
-[Browse the code on Github](https://github.com/revel/samples/tree/master/twitter-oauth)
+The core contents of the app and in the files
+* `twitter-oauth/app/`
+		* `models/`
+			* [`user.go`](/twitter-oauth/app/models/user.go)   - User struct and in-memory data store
+		* `controllers/`
+			* [`app.go`](/twitter-oauth/app/models/app.go)    - The logic
+
 
 ## OAuth Overview
 
