@@ -2,9 +2,13 @@ package models
 
 import (
 	"fmt"
-	"github.com/revel/revel"
 	"regexp"
+
+	"github.com/revel/revel"
 )
+
+var userRegex = regexp.MustCompile("^\\w*$")
+
 
 type User struct {
 	UserId             int
@@ -16,8 +20,6 @@ type User struct {
 func (u *User) String() string {
 	return fmt.Sprintf("User(%s)", u.Username)
 }
-
-var userRegex = regexp.MustCompile("^\\w*$")
 
 func (user *User) Validate(v *revel.Validation) {
 	v.Check(user.Username,

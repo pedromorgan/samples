@@ -1,16 +1,9 @@
-Revel Hotels -  International Bookingz..zzz
+Revel Hotels Bookings
 ===========================================
 
-This sample application demonstrates that running a hotel is complicated.. 
-and some reference material of what happenez every day at a `Revel Hotel` :-)
-- [Revel Swizz Hotel](https://www.youtube.com/watch?v=SXn2QVipK2o)
-- [Cleaning le room](https://www.youtube.com/watch?v=iO_eXXgOsFI)
-- [Checkin At Revel ParisAfro](https://www.youtube.com/watch?v=70TfU9R09Qg)
+This sample application demonstrates:
 
-We only write code once, life is fun so lets go..>>.
-
-
-* Using a database - SQLite or others 
+* Using a database - SQLite (or other easily possible)
 * Configuring the Revel DB module
 * Using the third party [GORP](https://github.com/coopernurse/gorp) *ORM-ish* library
 * Using [Interceptors](http://revel.github.io/manual/interceptors) for checking that an user is logged in
@@ -39,8 +32,7 @@ This example uses [sqlite](https://www.sqlite.org/), but code can be easily chan
 
 ## sqlite Installation
 
-- The booking app uses the [go-sqlite3](https://github.com/mattn/go-sqlite3) database driver, **which wraps the native C library**.
-- This means that the native c code needs to be installed first
+- The booking app uses the [go-sqlite3](https://github.com/mattn/go-sqlite3) database driver, **which wraps the native C library**. This means that the native c code needs to be installed first
 
 #### Install sqlite on OSX
 

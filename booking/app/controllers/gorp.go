@@ -62,9 +62,13 @@ func InitDB() {
 	}
 
 	hotels := []*models.Hotel{
-		&models.Hotel{0, "Marriott Courtyard", "Tower Pl, Buckhead", "Atlanta", "GA", "30305", "USA", 120},
-		&models.Hotel{0, "W Hotel", "Union Square, Manhattan", "New York", "NY", "10011", "USA", 450},
-		&models.Hotel{0, "Hotel Rouge", "1315 16th St NW", "Washington", "DC", "20036", "USA", 250},
+		&models.Hotel{0, "Revel Courtyard", "Plaza Place, Buckhead", "Newcastle", "Northlands", "SA19 5TFD", "UK", 120},
+		&models.Hotel{0, "Revel Skylight", "Linux Square, Manhattan", "New York", "Olde Jersey", "10011", "USA", 450},
+		&models.Hotel{0, "Revel Shadow", "Versuvius Square", "Rome", "Sicillyo", "IIXMCII", "USA", 250},
+		&models.Hotel{0, "Revel Rest", "Api Avenue", "Server Westside", "TripMainz", "200 OK", "USA", 250},
+		&models.Hotel{0, "Revel Atlantic", "Beach Drive", "Traingle", "Square County", "PY777", "Bermuda", 250},
+		&models.Hotel{0, "Revel Castle", "Top Hill", "Rocky Cliff", "Shard Land", "VERT-123", "DE", 250},
+
 	}
 	for _, hotel := range hotels {
 		if err := Dbm.Insert(hotel); err != nil {

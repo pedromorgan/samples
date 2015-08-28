@@ -31,7 +31,6 @@ An overview of the process:
 5. The app henceforth uses the access token to operate Twitter on the user's behalf.
 
 
-
 The `OAuth` process is governed by this configuration, which are twitter Api Keys..:
 
 ```go

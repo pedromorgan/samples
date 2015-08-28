@@ -1,11 +1,11 @@
-Chit Chat Revel App 
-=========================
+Revel Chit Chat Sample App
+================================
 
-The [`Chat`](/chat/) app demonstrates :
+The [`Chat`](/chat/) application demonstrates :
 
-* Using channels for a chat room with the [publish-subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) model
-	* With  [Websockets](http://revel.github.io/manual/websockets)
-	* And kinda legacy `Comet`  
+* Using channels for a chat room with the [publish-subscribe](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)(PUBSUB) model
+	* Using  [Websockets](http://revel.github.io/manual/websockets)
+	* And  [`Comet`](https://en.wikipedia.org/wiki/Comet_(programming))  
 
 The main files and purpose are:
 
@@ -21,11 +21,11 @@ The main files and purpose are:
 		* templates with HTML and Javascript
 
 ```
-Chat Room Hackers Guide
+
+Hackers Guide
 ================================================
 
 First, let's look at how the chat room is implemented, in
-
 [`chatroom.go`](/chat/app/chatroom/chatroom.go).
 
 The chat room runs as an independent `go-routine`, started on initialization:
